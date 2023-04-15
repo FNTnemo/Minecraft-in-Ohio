@@ -12,9 +12,12 @@ public class ExplosionLighter implements Listener {
     @EventHandler
     public void explosion(PlayerInteractEvent event){
         Player player = event.getPlayer();
+
         if(event.getAction() == Action.RIGHT_CLICK_BLOCK &&
         player.getInventory().getItemInHand().getType() == Material.FLINT_AND_STEEL){
+
             player.getWorld().createExplosion(event.getClickedBlock().getLocation(), 7);
+
         }
     }
 
