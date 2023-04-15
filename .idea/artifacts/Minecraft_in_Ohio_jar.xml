@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Minecraft-in-Ohio:jar">
+    <output-path>D:/Minecraft/Servers/Test2/plugins</output-path>
+    <root id="archive" name="Minecraft-in-Ohio.jar">
+      <element id="module-output" name="Minecraft-in-Ohio" />
+    </root>
+  </artifact>
+</component>

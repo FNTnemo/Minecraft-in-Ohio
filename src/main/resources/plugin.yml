@@ -1,0 +1,4 @@
+name: Minecraft-in-Ohio
+version: '${project.version}'
+main: me.fntnemo.minecraftinohio.Minecraft_in_Ohio
+api-version: 1.19
