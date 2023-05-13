@@ -1,6 +1,8 @@
 package me.fntnemo.minecraftinohio;
 
+import me.fntnemo.minecraftinohio.Commands.BoatCommand;
 import me.fntnemo.minecraftinohio.Events.ExplosionLighter;
+import me.fntnemo.minecraftinohio.Events.FlyingBoat;
 import me.fntnemo.minecraftinohio.Events.TreeAttack;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,5 +22,8 @@ public final class Plugin extends JavaPlugin {
     public void run(){
         Bukkit.getPluginManager().registerEvents(new ExplosionLighter(), this);
         Bukkit.getPluginManager().registerEvents(new TreeAttack(), this);
+        Bukkit.getPluginManager().registerEvents(new FlyingBoat(), this);
+
+        getCommand("boat").setExecutor(new BoatCommand());
     }
 }

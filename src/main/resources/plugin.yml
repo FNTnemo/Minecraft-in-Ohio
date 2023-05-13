@@ -1,4 +1,7 @@
 name: Minecraft-in-Ohio
 version: '${project.version}'
-main: me.fntnemo.minecraftinohio.Minecraft_in_Ohio
+main: me.fntnemo.minecraftinohio.Plugin
 api-version: 1.19
+
+commands:
+  boat:
